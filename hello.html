@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wapper">
+        <div class="demo"></div>
+    </div>
+    
+</body>
+
+<style>
+    .wapper{
+        /* position: relative; */
+    }
+     
+    .demo{
+        width: 100px;
+        height: 20px;
+        background-color: blue;
+        margin-left: 30px;
+        margin-top: 50px;
+        position: relative;
+    }
+    .demo::after{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 10px solid transparent;
+        border-top: 10.5px solid blue;
+        border-bottom: 10px solid blue;
+        left: -9.5px;
+    }
+    .demo::before{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 10px solid transparent;
+        border-left: 10px solid blue;
+        right: -19.9px;
+    }
+ 
+</style>
+</html>

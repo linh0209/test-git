@@ -7,7 +7,136 @@
     <title>Document</title>
 </head>
 <body>
-    <div>Hello word</div>
+
     
+
+
+<p id="demo"></p>
 </body>
+
+<script>
+
+    // var course = [
+    //     {
+    //         id: 1,
+    //         name: 'Javascript',
+    //         coin: 200
+    //     },
+    //     {
+    //         id: 2,
+    //         name: 'Ruby',
+    //         coin: 0
+    //     },
+    //     {
+    //         id: 3,
+    //         name: 'PHP',
+    //         coin: 0
+    //     },
+    //     {
+    //         id: 4,
+    //         name: 'Java',
+    //         coin:200
+    //     },
+    //     {
+    //         id: 5,
+    //         name: 'Ruby',
+    //         coin:200
+    //     }
+    // ];
+
+    // var courses = course.every(function(courses, index){
+    //     return courses.coin === 0;
+
+    // });
+
+    //Number type
+    a = 2;
+    b = 5;
+    console.log(typeof a);
+
+    //String type
+
+    var fullName = 'Linh Phương';
+
+    console.log(typeof fullName);
+
+    //Boolean type
+
+    var boolean = true;
+
+    console.log(typeof boolean);
+
+    //undefine type
+
+    var isSuccess;
+
+    console.log(typeof isSuccess);
+
+    //null type
+
+    var test = null;
+
+    console.log(typeof test);
+
+    //symbol type
+
+    var id = Symbol('id');
+
+    console.log(typeof id);
+
+    //function type
+
+    var myFunction = function(){
+        alert('Hello')
+    }
+
+    console.log(typeof myFunction);
+
+    //object type
+
+    var myObject = {
+        Name: 'Linh',
+        Age: 18,
+        Adress: 'DN'
+    }
+
+    console.log(typeof myObject);
+
+    var myArray = [
+        'Linh',
+        'Nguyễn',
+        'Phương',
+        'Thị'
+    ]
+    console.log(typeof myArray)
+
+    function writeLog(){
+        var myString = '';
+        for(var param of arguments){
+            myString += `${param} - `
+        }
+        console.log(myString)
+    }
+
+    writeLog('log1', 'log2','log3');
+
+    function cong(a, b){
+        return a.toString() + b.toString();
+
+    }
+    var result = cong(4,8);
+    console.log(result);
+
+    var firstName = 'Linh';
+    var LastName = 'Nguyễn';
+
+    console.log(`Tên tôi là:  ${firstName} ${LastName}`);
+
+    function uppercase(name) {
+        return name.toLowerCase();
+
+    }
+    console.log(uppercase('Nguyễn Thị Linh'));
+
+</script>
 </html>
