@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <div>Xin chào 0209</div>
+   <!-- <form class="quantity" action="">
+       <button class="btn_minus minus"><i class="fa-solid fa-minus"></i></button>
+        <input type="number" class="ip_quantity" min="0" max="999" value="1">
+        <button class="btn_plus plus"><i class="fa-solid fa-plus"></i></button>  
+
+   </form> -->
+   <P>test git</P>
+
     
 </body>
+
+<script>
+   function User(firstName, LastName, Avatar) {
+    this.firstName = firstName;
+    this.LastName = LastName;
+    this.Avatar = Avatar;
+    this.getName = function(){
+        return `${this.firstName} ${this.LastName}`
+    }
+   }
+
+   var author = new User('Linh', 'Nguyễn', 'Avatar');
+   var user = new User('Khánh', 'Nguyễn', 'Avatar');
+
+   author.title = 'Chia sẻ name của bạn';
+   user.comment = 'Cảm ơn bạn đã theo dõi';
+   User.prototype.className = 'F7';
+
+   console.log(author.getName());
+   console.log(user.className);
+</script>
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </html>
